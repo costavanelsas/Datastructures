@@ -33,8 +33,8 @@ public class HighScorePlayerFinder implements HighScoreList {
 
     @Override
     public void add(Player player) {
-        firstNameFinder.put(player.getFirstName() + player.getLastName(), player);
-        lastNameFinder.put(player.getLastName() + player.getLastName(), player);
+        firstNameFinder.put(player.getFirstName(), player);
+        lastNameFinder.put(player.getLastName(), player);
         fullNameFinder.put(player.getFirstName() + player.getLastName(), player);
     }
 
